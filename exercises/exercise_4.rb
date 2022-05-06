@@ -13,7 +13,7 @@ Store.create(name: "Whistler", annual_revenue: 1900000, mens_apparel: true, wome
 Store.create(name: "YaleTown", annual_revenue: 430000, mens_apparel: true, womens_apparel: true)
 
 @mens_stores = Store.where(mens_apparel: true)
-@womens_apparel = Store.where(womens_apparel: true) #annual_revenue < 1000000
+@womens_apparel = Store.where(womens_apparel: true) #HOW TO INCLUDE in fetch?? annual_revenue < 1000000 
 
 puts "MEN"
 @mens_stores.each do |store|
